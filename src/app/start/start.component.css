@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    background: #FFF;
+    background: rgb(44, 42, 42);
   }
   /* ============= Animation background ========= */
   .background {
@@ -29,7 +29,7 @@
     left: 45vw;
     width: 10px;
     height: 10px;
-    border: solid 1px #D7D4E4;
+    border: solid 1px violet;
     transform-origin: top left;
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     animation: cube 3s ease-in forwards infinite;
@@ -65,7 +65,7 @@
   /* ================= Header ============ */
   header{
     position: absolute;
-    top:20%;
+    top:5%;
     left: 0%;
     width:100%;
     margin: 0;
