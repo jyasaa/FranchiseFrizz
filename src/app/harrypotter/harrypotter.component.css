@@ -96,3 +96,14 @@ p{
     color: whitesmoke;
     margin-right: 10px;
 }
+
+
+.storeBtn{
+  background-color: black;
+  margin: 3%;
+  font-family:Verdana, sans-serif
+}
+.PageBody{
+  background-color: black;
+  padding-bottom: 5%;
+}
