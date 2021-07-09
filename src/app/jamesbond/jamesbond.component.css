@@ -1,107 +1,107 @@
 .boxheader{
-    width: 100%;
-    height: 1px;
-    color: goldenrod;
+  width: 100%;
+  height: 1px;
+  color: goldenrod;
 }
 .headerimg{
-    width: 10%;
-    margin-left: 45%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding: 0%;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0%;
 
 }
 header{
-    background-color: black;
-    align-content: center;
-    padding: 0%;
-    background-image: url('../../assets/HarryPotter/Castle.jpg');
+  background-color: black;
+  align-content: center;
+  padding: 0%;
+  background-image: url('../../assets/jamesbond/backjb007.jpg');
 
 }
 .Characters{
-  padding-left: 2%;
-  padding-right: 2%;
+padding-left: 2%;
+padding-right: 2%;
 
 }
 .back{
-  background-color: black;
-  padding-top: 1%;
+background-color: black;
+padding-top: 1%;
 }
 .backImg{
-  filter: invert(100%);
-  width: 5%;
+filter: invert(100%);
+width: 5%;
 }
 .frontBackImg{
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  text-align: right;
-  float: right;
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+text-align: right;
+float: right;
 }
 
 
 .container-fluid{
-    display: flex;
-    width: 100%;
-    padding: 2% 0%;
-    padding-bottom: 0%;
-    box-sizing: border-box;
-    height: 100vh;
-    background-color: black;
-  }
-  
-  .box {
-    flex: 1;
-    overflow: hidden;
-    transition: .5s;
-    margin: 2% 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
-  }
-  
-  .box > img {
-    width: 200%;
-    height: calc(100% - 10vh);
-    object-fit: cover; 
-    transition: .5s;
-  }
-  
-  .box > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 2vh;
-    line-height: 2.6;
-    color: rgb(95, 79, 38);
-  }
-  
-  .box:hover { flex: 1 1 50%; }
-  .box:hover > img {
-    width: 75%;
-    height: auto;
-  }
+  display: flex;
+  width: 100%;
+  padding: 2% 0%;
+  padding-bottom: 0%;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: black;
+}
 
-  .boxGrid{
-      width: 100%;
-      height: 20px;
-      background-color:rgb(97, 80, 36);
-  }
-  .Characters{
-      background-color:black;
-  }
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 2% 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 2vh;
+  line-height: 2.6;
+  color: rgb(95, 79, 38);
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 75%;
+  height: auto;
+}
+
+.boxGrid{
+    width: 100%;
+    height: 20px;
+    background-color:rgb(97, 80, 36);
+}
+.Characters{
+    background-color:black;
+}
 h3{
-    color: whitesmoke;
-    text-align: center;
+  color: whitesmoke;
+  text-align: center;
 }
 p{
-    color: whitesmoke;
-    margin-right: 10px;
+  color: whitesmoke;
+  margin-right: 10px;
 }
 .storeBtn{
-  background-color: black;
-  margin: 3%;
-  font-family:Verdana, sans-serif
+background-color: black;
+margin: 3%;
+font-family:Verdana, sans-serif
 }
 .PageBody{
-  background-color: black;
-  padding-bottom: 5%;
+background-color: black;
+padding-bottom: 5%;
 }
