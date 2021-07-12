@@ -9,7 +9,6 @@ const jwt = require("jsonwebtoken")
 userApi.use(exp.json())
 
 
-rm -f .git/index.lock
 //import MongoCLient
 const mc = require("mongodb").MongoClient;
 

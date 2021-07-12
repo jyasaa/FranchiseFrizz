@@ -8,6 +8,9 @@ import { JamesbondComponent } from './jamesbond/jamesbond.component';
 import { JurassicworldComponent } from './jurassicworld/jurassicworld.component';
 import { MissionimpossibleComponent } from './missionimpossible/missionimpossible.component';
 import { PiratesofthecaribbeanComponent } from './piratesofthecaribbean/piratesofthecaribbean.component';
+import { StoreComponent } from './store/store.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -24,7 +27,13 @@ const routes: Routes = [
 
   {path:"missionimpossible",component:MissionimpossibleComponent},
 
-  {path:"piratesofthecaribbean",component:PiratesofthecaribbeanComponent}
+  {path:"piratesofthecaribbean",component:PiratesofthecaribbeanComponent},
+
+  {path:"store",component:StoreComponent},
+
+  {path:"login",component:LoginComponent},
+
+  {path:"signup",component:SignupComponent}
 ];
 
 @NgModule({

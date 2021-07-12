@@ -11,6 +11,9 @@ import { JurassicworldComponent } from './jurassicworld/jurassicworld.component'
 import { MissionimpossibleComponent } from './missionimpossible/missionimpossible.component';
 import { JohnwickComponent } from './johnwick/johnwick.component';
 import { PiratesofthecaribbeanComponent } from './piratesofthecaribbean/piratesofthecaribbean.component';
+import { StoreComponent } from './store/store.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { PiratesofthecaribbeanComponent } from './piratesofthecaribbean/pirateso
     JurassicworldComponent,
     MissionimpossibleComponent,
     JohnwickComponent,
-    PiratesofthecaribbeanComponent
+    PiratesofthecaribbeanComponent,
+    StoreComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
