@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-additems',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdditemsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ps:ProductService,private router:Router) { }
 
   ngOnInit(): void {
   }
+  onAdd(itemObj:any){
+    console.log(itemObj)
 
-}
+      this.ps.addItem(itemObj).subscribe(
+        res=>{
+          if(res.message==="New product Added"){
+            alert("New product Added")
+  
+            //navigate to login component
+            //this.router.navigateByUrl("/login")
+  
+          }
+          else{
+            alert(res.message)
+          }
+        },
+        err=>{
+          console.log(err)
+          alert("Something Went Wrong in Product Creation")
+        }
+      )
+      
+    }
+  }
+
