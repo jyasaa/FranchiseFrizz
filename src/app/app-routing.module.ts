@@ -11,6 +11,7 @@ import { PiratesofthecaribbeanComponent } from './piratesofthecaribbean/pirateso
 import { StoreComponent } from './store/store.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AdditemsComponent } from './additems/additems.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -33,7 +34,9 @@ const routes: Routes = [
 
   {path:"login",component:LoginComponent},
 
-  {path:"signup",component:SignupComponent}
+  {path:"signup",component:SignupComponent},
+  
+  {path:"additems",component:AdditemsComponent}
 ];
 
 @NgModule({

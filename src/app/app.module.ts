@@ -14,6 +14,9 @@ import { PiratesofthecaribbeanComponent } from './piratesofthecaribbean/pirateso
 import { StoreComponent } from './store/store.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { AdditemsComponent } from './additems/additems.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { SignupComponent } from './signup/signup.component';
     PiratesofthecaribbeanComponent,
     StoreComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AdditemsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
