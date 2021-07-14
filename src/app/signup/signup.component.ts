@@ -20,7 +20,6 @@ export class SignupComponent implements OnInit {
       res=>{
         if(res.message==="User created"){
           alert("User Created")
-
           //navigate to login component
           this.router.navigateByUrl("/login")
 

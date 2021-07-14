@@ -54,9 +54,6 @@ mc.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (er
     }
 })
 
-
-
-
 //invalid path
 app.use((req, res, next) => {
 

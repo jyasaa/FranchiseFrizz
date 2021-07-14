@@ -12,6 +12,7 @@ import { StoreComponent } from './store/store.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdditemsComponent } from './additems/additems.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -36,7 +37,9 @@ const routes: Routes = [
 
   {path:"signup",component:SignupComponent},
   
-  {path:"additems",component:AdditemsComponent}
+  {path:"additems",component:AdditemsComponent},
+
+  {path:"admin",component:AdminComponent}
 ];
 
 @NgModule({

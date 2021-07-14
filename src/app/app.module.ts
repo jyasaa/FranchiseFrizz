@@ -17,6 +17,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { AdditemsComponent } from './additems/additems.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AdditemsComponent } from './additems/additems.component';
     StoreComponent,
     LoginComponent,
     SignupComponent,
-    AdditemsComponent
+    AdditemsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

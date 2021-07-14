@@ -1,4 +1,4 @@
-<p class="display-4 text-center text-info m-5">Signup here</p>
+<p class="display-4 text-center text-info m-5">Add Items Here</p>
 <form #ref="ngForm" (ngSubmit)="onAdd(ref.value)" class="w-75 mx-auto mt-5">
     <div class="form-floating mb-3">
         <input type="text" class="form-control" id="username" placeholder="name@example.com" name="franchisename"
@@ -17,5 +17,5 @@
         <input type="number" class="form-control" id="dob" placeholder="Email" name="cost" ngModel>
         <label for="dob">Cost</label>
     </div>
-    <button class="btn btn-success" type="submit">Signup</button>
+    <button class="btn btn-success" type="submit">Add Item</button>
 </form>

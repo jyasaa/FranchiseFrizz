@@ -13,6 +13,7 @@ export class AdditemsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   onAdd(itemObj:any){
     console.log(itemObj)
 
