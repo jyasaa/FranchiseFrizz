@@ -43,4 +43,9 @@
       color: white;
   }
 
+  .content{
+      background-color: black;
+      height: 100vh;
+  }
+
   

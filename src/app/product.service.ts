@@ -1,17 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { observable, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor(private hc:HttpClient) { }
+  constructor(private hc: HttpClient) { }
 
-  addItem(productObj:any):Observable<any>{
-    return  this.hc.post("/product/addproduct",productObj)
+  addItem(productObj: any): Observable<any> {
+    return this.hc.post("/product/addproduct", productObj)
 
-}
+
+  }
+
+  getMech(): Observable<any> {
+    return this.hc.get("/product/getproducts")
+  }
 
 }

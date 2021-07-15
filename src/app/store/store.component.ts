@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-store',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponent implements OnInit {
 
-  constructor() { }
-
+  public merchList:any=[]
+  constructor( private ps:ProductService) { }
   ngOnInit(): void {
+    this.ps.getMech().subscribe(
+      data=>{
+        console.log(data.message)
+         this.merchList=data.message
+      }
+    ) 
   }
 
   
