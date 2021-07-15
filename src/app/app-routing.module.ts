@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { AdditemsComponent } from './additems/additems.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProductComponent } from './product/product.component';
+import { HarrypotterStoreComponent } from './harrypotter-store/harrypotter-store.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -31,7 +33,9 @@ const routes: Routes = [
 
   {path:"piratesofthecaribbean",component:PiratesofthecaribbeanComponent},
 
-  {path:"store",component:StoreComponent},
+  {path:"store",component:StoreComponent,children:[
+    {path:"harrypotterStore",component:HarrypotterStoreComponent}
+  ]},
 
   {path:"login",component:LoginComponent},
 
@@ -39,7 +43,9 @@ const routes: Routes = [
   
   {path:"additems",component:AdditemsComponent},
 
-  {path:"admin",component:AdminComponent}
+  {path:"admin",component:AdminComponent},
+
+  {path:"product",component:ProductComponent}
 ];
 
 @NgModule({

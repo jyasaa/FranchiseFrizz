@@ -1,18 +1,55 @@
-<div class="store"  >
+<!--<div class="store"  >
     <div class="franchise" *ngFor="let merch of merchList" >
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
+                <img src="{{ merch.franchiseUrl }}" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title"> {{merch.franchisename}} </h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <small><button (click)="gotoStore(merch)">Go To Store</button></small>
                 </div>
               </div>
             </div>
           </div>
     </div>
+</div>>-->
+
+
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-sm-2 ">
+      <nav class="navbar navbar-expand-md  bg-info d-flex flex-column align-items-center">
+        <a href="#" class="navbar-brand text-light mt-5">
+            <div class="display-5 font-weight-bold">Franchises</div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a  routerLink="harrypotterStore" class="nav-link text-light pl-4" routerLinkActive="active">HarryPotter</a>
+            </li>
+            <li class="nav-item w-100">
+                <a   routerLink="ml" class="nav-link text-light pl-4" routerLinkActive="active">JamesBond</a>
+            </li>
+            <li class="nav-item w-100">
+                <a   routerLink="ai" class="nav-link text-light pl-4" routerLinkActive="active">Mission Impossible</a>
+            </li>
+            <li class="nav-item   w-100">
+                <a  class="nav-link  text-light pl-4"   routerLink="androidDev"  routerLinkActive="active">Pirates Of the Carribean</a>
+                 
+            </li>
+            <li class="nav-item   w-100">
+              <a  class="nav-link  text-light pl-4"   routerLink="androidDev"  routerLinkActive="active">Jurassic World</a>
+          </li>
+          <li class="nav-item   w-100">
+            <a  class="nav-link  text-light pl-4"   routerLink="androidDev"  routerLinkActive="active">JohnWick</a>
+        </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm-10 ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

@@ -15,8 +15,8 @@ export class ProductService {
 
   }
 
-  getMech(): Observable<any> {
-    return this.hc.get("/product/getproducts")
+  getMech(franchisename:any): Observable<any> {
+    return this.hc.get(`/product/getproducts/${franchisename}`)
   }
 
 }

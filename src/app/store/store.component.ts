@@ -12,14 +12,8 @@ export class StoreComponent implements OnInit {
   public merchList:any=[]
   constructor( private ps:ProductService) { }
   ngOnInit(): void {
-    this.ps.getMech().subscribe(
-      data=>{
-        console.log(data.message)
-         this.merchList=data.message
-      }
-    ) 
+    
   }
-
   
 
 }

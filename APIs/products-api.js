@@ -56,11 +56,11 @@ productApi.post("/addproduct", expressErrorHandler(async (req, res, next) => {
 
 
 
-productApi.get("/getproducts", expressErrorHandler(async (req, res) => {
+productApi.get("/getproducts/:franchisename", expressErrorHandler(async (req, res) => {
 
     let productCollectionObj = req.app.get("productCollectionObj")
-
-    let merchList = await productCollectionObj.find().toArray()
+    let name=req.params.franchisename
+    let merchList = await productCollectionObj.findOne({franchisename:name})
     res.send({ message: merchList })
 
 }))

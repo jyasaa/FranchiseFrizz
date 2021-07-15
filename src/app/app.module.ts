@@ -18,6 +18,8 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { AdditemsComponent } from './additems/additems.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProductComponent } from './product/product.component';
+import { HarrypotterStoreComponent } from './harrypotter-store/harrypotter-store.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AdminComponent } from './admin/admin.component';
     LoginComponent,
     SignupComponent,
     AdditemsComponent,
-    AdminComponent
+    AdminComponent,
+    ProductComponent,
+    HarrypotterStoreComponent
   ],
   imports: [
     BrowserModule,
