@@ -15,6 +15,11 @@ import { AdditemsComponent } from './additems/additems.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { HarrypotterStoreComponent } from './harrypotter-store/harrypotter-store.component';
+import { JamesbondStoreComponent } from './jamesbond-store/jamesbond-store.component';
+import { JohnwickStoreComponent } from './johnwick-store/johnwick-store.component';
+import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld-store.component';
+import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
+import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -34,7 +39,12 @@ const routes: Routes = [
   {path:"piratesofthecaribbean",component:PiratesofthecaribbeanComponent},
 
   {path:"store",component:StoreComponent,children:[
-    {path:"harrypotterStore",component:HarrypotterStoreComponent}
+    {path:"harrypotterStore",component:HarrypotterStoreComponent},
+    {path:"jamesbondStore",component:JamesbondStoreComponent},
+    {path:"johnwickStore",component:JohnwickStoreComponent},
+    {path:"jurassicworldStore",component:JurassicworldStoreComponent},
+    {path:"missionimpossibleStore",component:MissionimpossibleStoreComponent},
+    {path:"piratesofthecaribbeanStore",component:PiratesofthecaribbeanStoreComponent}
   ]},
 
   {path:"login",component:LoginComponent},

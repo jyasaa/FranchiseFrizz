@@ -1,9 +1,34 @@
-.store{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color:black;
-    flex-direction: column;
-    padding: 40px;
+body,html{
+    background-color: black;
 }
+a{
+    color: white;
+}
+a:hover{
+    border-radius: 10px;
+    background-color:#fcde67;
+    color: black;
+}
+a:active :enabled :after{
+    border-radius: 10px;
+    background-color:#fcde67;
+    color: black;
+}
+
+.back{
+    background-color: black;
+    padding-top: 1%;
+  }
+  .backImg{
+    filter: invert(100%);
+    width: 3%;
+  }
+  .backImg:hover{
+      background-color: white;
+  }
+  .frontBackImg{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    text-align: right;
+    float: right;
+  }

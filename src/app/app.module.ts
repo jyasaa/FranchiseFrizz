@@ -20,6 +20,11 @@ import { AdditemsComponent } from './additems/additems.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProductComponent } from './product/product.component';
 import { HarrypotterStoreComponent } from './harrypotter-store/harrypotter-store.component';
+import { JamesbondStoreComponent } from './jamesbond-store/jamesbond-store.component';
+import { JohnwickStoreComponent } from './johnwick-store/johnwick-store.component';
+import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld-store.component';
+import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
+import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { HarrypotterStoreComponent } from './harrypotter-store/harrypotter-store
     AdditemsComponent,
     AdminComponent,
     ProductComponent,
-    HarrypotterStoreComponent
+    HarrypotterStoreComponent,
+    JamesbondStoreComponent,
+    JohnwickStoreComponent,
+    JurassicworldStoreComponent,
+    MissionimpossibleStoreComponent,
+    PiratesofthecaribbeanStoreComponent
   ],
   imports: [
     BrowserModule,
