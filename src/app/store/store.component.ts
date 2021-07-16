@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 
@@ -9,11 +8,9 @@ import { ProductService } from '../product.service';
 })
 export class StoreComponent implements OnInit {
 
-  public merchList:any=[]
+  products:any=[]
   constructor( private ps:ProductService) { }
   ngOnInit(): void {
-    
-  }
-  
 
+  }
 }

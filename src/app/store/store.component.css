@@ -8,12 +8,12 @@ a:hover{
     border-radius: 10px;
     background-color:#fcde67;
     color: black;
+    transition: 0.5s;
 }
-a:active :enabled :after{
-    border-radius: 10px;
-    background-color:#fcde67;
-    color: black;
+a:active{
+    color: #fcde67;
 }
+
 
 .back{
     background-color: black;
