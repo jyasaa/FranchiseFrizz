@@ -1,17 +1,32 @@
 <div class="header">
 
       <div class="logo">
-        <img class="ig" src="../assets/FranchiseFrizz-logo.png" alt="FranchiseFrizz-Logo">
+        <a href="#"><img class="ig" src="../assets/FranchiseFrizz-logo.png" alt="FranchiseFrizz-Logo"></a>
       </div>
     
-    <div class="connect">
-        <div class="login">
+    <div class="connect" *ngIf="!us.userLoginStatus">
+        <div class="login ">
           <a routerLink="/login" href="">Login</a>
         </div>
         <div class="signup">
           <a routerLink="/signup" href="">Signup</a>
         </div>
     </div>
+
+  <div class="connect"  *ngIf="us.userLoginStatus">
+    <div class="login"><a routerLink="/login"  (click)=userLogout()>Logout</a>L</div>
+  </div>
+
+    <!--
+    <li class="nav-item" *ngIf="!us.userLoginStatus">
+      <a class="nav-link" routerLink="login" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Login</a>
+    </li>
+
+    <li class="nav-item"  *ngIf="us.userLoginStatus">
+      <a class="nav-link" routerLink="login" routerLinkActive="active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"  (click)=userLogout()>Logout</a>
+    </li>
+  -->
+
     
 </div>
 

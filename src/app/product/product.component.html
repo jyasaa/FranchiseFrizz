@@ -1,15 +1,14 @@
 <!-- card  -->
 <div class="card mt-5 shadow">
 
-    <img [src]=productObj.url width="100%"/>
+    <img [src]=productObj.url/>
     <div class="card-body">
-      <div class="h4 text-center">{{productObj.productname}}</div>
+      <div class="h5 text-center">{{productObj.productname}}</div>
       <p class="text-center">
        Cost : {{productObj.cost}} Rs
       </p>
       <div class="btn-group align-items-center">
-        <button class="btn btn-secondary learn-btn ">Learn More</button>
-        <button class="btn btn-success learn-btn">Enroll</button>
+        <button class="btn btn-success learn-btn" (click)="onOrder()">Order Now</button>
       </div>
     </div>
 

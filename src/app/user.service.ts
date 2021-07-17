@@ -7,7 +7,7 @@ import { Observable, ObservableInput } from 'rxjs';
 })
 export class UserService {
 
-  //userLoginStatus=false;
+  userLoginStatus=false;
 
   //inject http client object
   constructor(private hc:HttpClient) { }

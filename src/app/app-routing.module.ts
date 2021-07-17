@@ -44,7 +44,8 @@ const routes: Routes = [
     {path:"johnwickStore",component:JohnwickStoreComponent},
     {path:"jurassicworldStore",component:JurassicworldStoreComponent},
     {path:"missionimpossibleStore",component:MissionimpossibleStoreComponent},
-    {path:"piratesofthecaribbeanStore",component:PiratesofthecaribbeanStoreComponent}
+    {path:"piratesofthecaribbeanStore",component:PiratesofthecaribbeanStoreComponent},
+    {path:"",component:HarrypotterStoreComponent,pathMatch:"full"}
   ]},
 
   {path:"login",component:LoginComponent},

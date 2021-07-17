@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-product',
@@ -11,5 +13,14 @@ export class ProductComponent {
   @Input() productObj:any;
 
   //console.log("Hi");
+  constructor(public us:UserService,public router:Router){}
+  onOrder(){
+
+    if(!this.us.userLoginStatus){
+
+      this.router.navigateByUrl("/login")
+    }
+  
+  }
 
 }
