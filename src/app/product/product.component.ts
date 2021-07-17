@@ -20,7 +20,10 @@ export class ProductComponent {
 
       this.router.navigateByUrl("/login")
     }
-  
+    
+    this.us.userCart.push(this.productObj)
+    console.log(this.us.userCart) 
   }
 
+  
 }

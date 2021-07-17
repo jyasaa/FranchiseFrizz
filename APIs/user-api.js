@@ -99,6 +99,7 @@ userApi.get("/getuser/:username", expressErrorHandler(async (req, res, next) => 
 
 
 
+
 //http://localhost:3000/user/createuser
 //create user
 userApi.post("/createuser", expressErrorHandler(async (req, res, next) => {

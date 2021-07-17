@@ -8,7 +8,7 @@ import { Observable, ObservableInput } from 'rxjs';
 export class UserService {
 
   userLoginStatus=false;
-
+  userCart: Object[] = [];
   //inject http client object
   constructor(private hc:HttpClient) { }
 

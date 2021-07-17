@@ -1,15 +1,17 @@
 <!-- card  -->
 <div class="card mt-5 shadow">
 
-    <img [src]=productObj.url/>
-    <div class="card-body">
-      <div class="h5 text-center">{{productObj.productname}}</div>
-      <p class="text-center">
-       Cost : {{productObj.cost}} Rs
-      </p>
-      <div class="btn-group align-items-center">
-        <button class="btn btn-success learn-btn" (click)="onOrder()">Order Now</button>
-      </div>
-    </div>
-
+  <div class="imgBox">
+    <img [src]=productObj.url />
   </div>
+  <div class="card-body">
+    <div class="h5 text-center">{{productObj.productname}}</div>
+    <p class="text-center">
+      Cost : {{productObj.cost}} Rs
+    </p>
+    <div class="btn-group btn">
+      <button class="btn btn-success learn-btn" (click)="onOrder()">Order Now</button>
+    </div>
+  </div>
+
+</div>

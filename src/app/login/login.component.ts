@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   //inject UserService obj
   constructor(private us:UserService,private router:Router) { }
-
+  
   ngOnInit(): void {
   }
 
