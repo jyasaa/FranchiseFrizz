@@ -25,6 +25,7 @@ import { JohnwickStoreComponent } from './johnwick-store/johnwick-store.componen
 import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld-store.component';
 import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
 import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-sto
     JohnwickStoreComponent,
     JurassicworldStoreComponent,
     MissionimpossibleStoreComponent,
-    PiratesofthecaribbeanStoreComponent
+    PiratesofthecaribbeanStoreComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

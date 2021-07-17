@@ -20,6 +20,7 @@ import { JohnwickStoreComponent } from './johnwick-store/johnwick-store.componen
 import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld-store.component';
 import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
 import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -56,7 +57,9 @@ const routes: Routes = [
 
   {path:"admin",component:AdminComponent},
 
-  {path:"product",component:ProductComponent}
+  {path:"product",component:ProductComponent},
+
+  {path:"footer",component:FooterComponent}
 ];
 
 @NgModule({
