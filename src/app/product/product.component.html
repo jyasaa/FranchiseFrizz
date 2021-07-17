@@ -9,8 +9,35 @@
     <p class="text-center">
       Cost : {{productObj.cost}} Rs
     </p>
-    <div class="btn-group btn">
-      <button class="btn btn-success learn-btn" (click)="onOrder()">Order Now</button>
+    <div class="btn-group btn" (click)="onOrder()">
+      <ng-template #popContent>
+        <h4>Product Ordered <br> Total amount: {{productObj.cost}} </h4>
+      </ng-template>
+      <ng-template #popTitle> Acknowledgement</ng-template>
+      <button type="button" class="btn btn-success" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+        Order Now
+      </button>
+
+
+      <ng-template #addToCartContent>
+        <form #ref="ngForm" (ngSubmit)="onAddToCart(ref.value)">
+          <input type="number" name="quantity" id="quantity" ngModel>
+          <label for="quantity">1-4</label>
+          <button class="btn btn-success" (click)="p.close()" type="submit">Add</button>
+        </form>
+      </ng-template>
+      <ng-template #addToCartTitle> Quantity: </ng-template>
+      <button type="button" class="btn btn-success" [ngbPopover]="addToCartContent" [popoverTitle]="addToCartTitle" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()">
+        Add to Cart
+      </button>
+
+      <!-- <button type="button" class="btn btn-outline-secondary mr-2" ngbPopover="What a great tip!" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()" popoverTitle="Pop title">
+        Click me to open a popover
+      </button>
+      <button type="button" class="btn btn-outline-secondary mr-2" (click)="p.close()">
+        Click me to close a popover
+      </button> -->
+
     </div>
   </div>
 

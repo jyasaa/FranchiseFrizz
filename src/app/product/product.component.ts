@@ -21,9 +21,15 @@ export class ProductComponent {
       this.router.navigateByUrl("/login")
     }
     
-    this.us.userCart.push(this.productObj)
-    console.log(this.us.userCart) 
+     
   }
 
-  
+  onAddToCart(cartObj:any){
+    // this.us.userCart.push(this.productObj)
+    // console.log(this.us.userCart)
+    let newCartObj=this.productObj
+    newCartObj['quantity']=cartObj.quantity
+    //console.log(newCartObj)
+    this.us.userCart.push(newCartObj)
+  }
 }

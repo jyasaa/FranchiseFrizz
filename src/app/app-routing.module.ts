@@ -21,6 +21,7 @@ import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld
 import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
 import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
 import { FooterComponent } from './footer/footer.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -59,7 +60,9 @@ const routes: Routes = [
 
   {path:"product",component:ProductComponent},
 
-  {path:"footer",component:FooterComponent}
+  {path:"footer",component:FooterComponent},
+
+  {path:"cart",component:CartComponent}
 ];
 
 @NgModule({

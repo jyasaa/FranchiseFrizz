@@ -26,6 +26,8 @@ import { JurassicworldStoreComponent } from './jurassicworld-store/jurassicworld
 import { MissionimpossibleStoreComponent } from './missionimpossible-store/missionimpossible-store.component';
 import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-store/piratesofthecaribbean-store.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +52,15 @@ import { FooterComponent } from './footer/footer.component';
     JurassicworldStoreComponent,
     MissionimpossibleStoreComponent,
     PiratesofthecaribbeanStoreComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

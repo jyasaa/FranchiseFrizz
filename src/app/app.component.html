@@ -6,15 +6,16 @@
 
   <div class="connect" *ngIf="!us.userLoginStatus">
     <div class="login ">
-      <a routerLink="/login" href="">Login</a>
+      <a routerLink="/login" href=""> <i class="fas fa-sign-in-alt"></i> Login</a>
     </div>
     <div class="signup">
-      <a routerLink="/signup" href="">Signup</a>
+      <a routerLink="/signup" href=""> <i class="fas fa-user-plus"></i> Signup</a>
     </div>
   </div>
 
   <div class="connect" *ngIf="us.userLoginStatus">
-    <div class="login"><a routerLink="/login" (click)=userLogout()>Logout</a>L</div>
+    <div class="login"><a routerLink="/login" (click)=userLogout()> <i class="fas fa-sign-out-alt"></i>Logout</a></div>
+    <div class="login"><a routerLink="/cart" ><i class="fas fa-shopping-cart"></i>Cart</a></div>
   </div>
 
   <!--
