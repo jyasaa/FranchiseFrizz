@@ -8,7 +8,10 @@ import { UserService } from './user.service';
 })
 export class AppComponent {
   title = 'franchise';
-
+  cartContents:any=[]
+  ngOnInit(): void {
+    this.cartContents=this.us.userCart
+  }
   constructor(public us:UserService){}
   userLogout(){
     localStorage.clear();

@@ -30,6 +30,12 @@ export class ProductComponent {
     let newCartObj=this.productObj
     newCartObj['quantity']=cartObj.quantity
     //console.log(newCartObj)
-    this.us.userCart.push(newCartObj)
+    if(newCartObj.quantity===0){
+      alert("Please select atleast one item!")
+    }
+    else{
+      this.us.userCart.push(newCartObj)
+    }
+    
   }
 }

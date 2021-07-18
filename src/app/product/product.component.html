@@ -21,7 +21,7 @@
 
       <ng-template #addToCartContent>
         <form #ref="ngForm" (ngSubmit)="onAddToCart(ref.value)">
-          <input type="number" name="quantity" id="quantity" ngModel>
+          <input type="number" name="quantity" id="quantity" min="1" max="4" ngModel>
           <label for="quantity">1-4</label>
           <button class="btn btn-success" (click)="p.close()" type="submit">Add</button>
         </form>
