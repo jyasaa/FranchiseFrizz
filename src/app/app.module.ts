@@ -28,6 +28,7 @@ import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-sto
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './cart/cart.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { CartComponent } from './cart/cart.component';
     MissionimpossibleStoreComponent,
     PiratesofthecaribbeanStoreComponent,
     FooterComponent,
-    CartComponent
+    CartComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
