@@ -23,6 +23,7 @@ import { PiratesofthecaribbeanStoreComponent } from './piratesofthecaribbean-sto
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { BooksComponent } from './books/books.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -65,7 +66,9 @@ const routes: Routes = [
 
   {path:"cart",component:CartComponent},
 
-  {path:"contactus",component:ContactusComponent}
+  {path:"contactus",component:ContactusComponent},
+
+  {path:"books",component:BooksComponent}
 ];
 
 @NgModule({

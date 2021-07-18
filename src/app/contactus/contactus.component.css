@@ -2,6 +2,7 @@
     resize: none;
 }
 .mb-5,.my4,.em,.subject,.msg,h2,h5,p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:goldenrod;
 }
 .fa-2x{

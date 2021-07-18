@@ -48,7 +48,11 @@
             </form>
  
             <div class="text-center text-md-left">
-                <a class="btn btn-success btn-lg mt-5 px-5">Send</a>
+                <ng-template #popContent>
+                    <h4> EMAIL SENT </h4>
+                  </ng-template>
+                  <ng-template #popTitle></ng-template>
+                <button class="btn btn-success btn-lg mt-5 px-5" [ngbPopover]="popContent" [popoverTitle]="popTitle">Send</button>
             </div>
             <div class="status"></div>
         </div>

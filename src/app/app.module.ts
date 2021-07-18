@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     PiratesofthecaribbeanStoreComponent,
     FooterComponent,
     CartComponent,
-    ContactusComponent
+    ContactusComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
