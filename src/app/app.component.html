@@ -4,19 +4,14 @@
     <a href="#"><img class="ig" src="../assets/FranchiseFrizz-logo.png" alt="FranchiseFrizz-Logo"></a>
   </div>
 
-  <div class="connect" *ngIf="!us.userLoginStatus">
-    <div class="login ">
-      <a routerLink="/login" href=""> <i class="fas fa-sign-in-alt"></i> Login</a>
-    </div>
-    <div class="signup">
-      <a routerLink="/signup" href=""> <i class="fas fa-user-plus"></i> Signup</a>
-    </div>
+  <div class="connect justify-content-end" *ngIf="!us.userLoginStatus">
+    <div class="login "><a routerLink="/login" href=""> <i class="fas fa-sign-in-alt"></i> Login</a></div>
+    <div class="signup"><a routerLink="/signup" href=""> <i class="fas fa-user-plus"></i> Signup</a></div>
   </div>
 
-  <div class="connect" *ngIf="us.userLoginStatus">
+  <div class="connect justify-content-end" *ngIf="us.userLoginStatus">
     <div class="login"><a routerLink="/cart" ><i class="fas fa-shopping-cart"></i> Cart ({{cartContents.length}})</a></div>
     <div class="login"><a routerLink="/login" (click)=userLogout()> <i class="fas fa-sign-out-alt"></i> Logout</a></div>
-    
   </div>
   
 </div>

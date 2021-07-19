@@ -89,3 +89,20 @@ body {
         padding-top: 15px
     }
 }
+.back{
+    background-color: black;
+    padding-top: 1%;
+  }
+  .backImg{
+    filter: invert(100%);
+    width: 3%;
+  }
+  .backImg:hover{
+      background-color: white;
+  }
+  .frontBackImg{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    text-align: right;
+    float: right;
+  }

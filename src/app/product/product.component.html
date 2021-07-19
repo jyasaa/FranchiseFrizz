@@ -14,7 +14,7 @@
         <h4>Product Ordered <br> Total amount: {{productObj.cost}} </h4>
       </ng-template>
       <ng-template #popTitle> Acknowledgement</ng-template>
-      <button type="button" class="btn btn-success" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+      <button type="button" class="btn btn-secondary" [ngbPopover]="popContent" [popoverTitle]="popTitle">
         Order Now
       </button>
 
@@ -27,6 +27,7 @@
         </form>
       </ng-template>
       <ng-template #addToCartTitle> Quantity: </ng-template>
+
       <button type="button" class="btn btn-success" [ngbPopover]="addToCartContent" [popoverTitle]="addToCartTitle" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()">
         Add to Cart
       </button>
