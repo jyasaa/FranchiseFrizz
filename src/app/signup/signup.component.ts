@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../user.service'
+declare let alertify: any;
 
 @Component({
   selector: 'app-signup',
@@ -19,18 +20,18 @@ export class SignupComponent implements OnInit {
     this.us.createUser(userObj).subscribe(
       res=>{
         if(res.message==="User created"){
-          alert("User Created")
+          alertify.success("User Succesfully Created !")
           //navigate to login component
           this.router.navigateByUrl("/login")
 
         }
         else{
-          alert(res.message)
+          alertify.alert(res.message)
         }
       },
       err=>{
-        console.log(err)
-        alert("Something Went Wrong in user Creation")
+        //console.log(err)
+        alertify.alert("Something Went Wrong in user Creation")
       }
     )
     

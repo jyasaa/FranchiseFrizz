@@ -1,23 +1,32 @@
-<div class="signup">
-    <p class="display-4 text-center text-info m-5">Signup here</p>
-    <form #ref="ngForm" (ngSubmit)="onSignup(ref.value)" class="w-75 mx-auto mt-5">
-        <div class="form-floating mb-3">
-            <input type="username" class="form-control" id="username" placeholder="name@example.com" name="username"
-                ngModel>
-            <label for="username">Username</label>
+<body>
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-sm-12 mt-5">
+                <div class="form row mt-3" id="signup">
+                    <div class="col-sm-12 container">
+                        <form #ref="ngForm" (ngSubmit)="onSignup(ref.value)">
+                            <div class="input mb-3">
+                                <input type="username" class="main-form animated bounceInDown" id="username"
+                                    placeholder=" USERNAME" name="username" required="required" ngModel>
+                            </div>
+                            <div class="input mb-3">
+                                <input type="password" class="main-form animated bounceInDown" id="password"
+                                    placeholder=" PASSWORD" name="password" required="required" ngModel>
+                            </div>
+                            <div class="input mb-3">
+                                <input type="email" class="main-form animated bounceInDown" id="email"
+                                    placeholder=" EMAIL" name="email" required="required" ngModel>
+                            </div>
+                            <div class="input mb-3">
+                                <input type="date" class="p-2 dob animated bounceInDown" id="dob" name="dob" 
+                                required="required" ngModel>
+                            </div>
+                            <input class="main-form btn animated bounceInDown my-5" type="submit" 
+                            value="SIGN UP" />
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="password" placeholder="Password" name="password" ngModel>
-            <label for="password">Password</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" ngModel>
-            <label for="email">Email </label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="date" class="form-control" id="dob" placeholder="Email" name="dob" ngModel>
-            <label for="dob">Date of birth</label>
-        </div>
-        <button class="btn btn-success" type="submit">Signup</button>
-    </form>
-</div>
+    </div>
+</body>

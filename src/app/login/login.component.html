@@ -1,3 +1,4 @@
+<!--
 <div class="login">
     <p class="display-4 text-center text-secondary m-5">Login here</p>
     <form #ref="ngForm" (ngSubmit)="onLogin(ref.value)" class="w-75 mx-auto mt-5">
@@ -14,3 +15,28 @@
         <button class="btn btn-success" type="submit">Login</button>
     </form>
 </div>
+-->
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-5">
+          <div class="form row mt-3" id="login">
+            <div class="col-sm-12 container">
+            <form #ref="ngForm" (ngSubmit)="onLogin(ref.value)">
+               <div class="input mt-4 mb-1">
+              <input class="main-form animated bounceInDown" type="text" name="username" placeholder=" USERNAME" ngModel>
+               </div>
+              <div class="input mt-4">
+              <input class="main-form animated bounceInDown" type="password" name="password" placeholder=" PASSWORD" ngModel>
+               </div>
+              <div class="input mt-5">
+              <input class="main-form btn animated bounceInDown" type="submit" value = "LOGIN"/>
+               </div>
+            </form>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </body>

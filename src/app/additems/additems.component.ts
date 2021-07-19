@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
+declare let alertify: any;
 
 @Component({
   selector: 'app-additems',
@@ -20,19 +21,19 @@ export class AdditemsComponent implements OnInit {
       this.ps.addItem(itemObj).subscribe(
         res=>{
           if(res.message==="New product Added"){
-            alert("New product Added")
+            alertify.success("New product Added !")
   
             //navigate to login component
             //this.router.navigateByUrl("/login")
   
           }
           else{
-            alert(res.message)
+            alertify.message(res.message)
           }
         },
         err=>{
           console.log(err)
-          alert("Something Went Wrong in Product Creation")
+          alertify.alert("Something Went Wrong in Product Creation")
         }
       )
       

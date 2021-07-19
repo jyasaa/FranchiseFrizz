@@ -1,3 +1,55 @@
-.login{
-    height: 100vh;
-}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+  }
+  .border-radius {
+    border-radius: 5px;
+  }
+  body {
+    background: url(https://wallpaperaccess.com/full/1094653.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 50%;
+    font-family: "Roboto";
+    color: #fff;
+  }
+  .form {
+    width: 390px;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+  .form {
+    height: 300px;
+    margin: 25px auto;
+    background: #000;
+  }
+  
+  #login {
+    margin-top: 30px;
+    margin-bottom: 215px;
+  }
+  .input {
+    margin: 20px 0;
+  }
+  input.main-form {
+    border: 1px solid #a0b3b0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: #000;
+    font-size: 16px;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: top;
+  }
+  .input a {
+    color: #fff;
+  }
+  .form input.btn {
+    background: #1ab188;
+    border: none;
+  }
+  

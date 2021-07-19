@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../user.service';
-
+declare let alertify: any;
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -35,12 +35,12 @@ export class LoginComponent implements OnInit {
           this.router.navigateByUrl("/admin")
         }
         else{
-          alert(res.message)
+          alertify.alert(res.message)
         }
       },
       err=>{
         console.log(err)
-        alert("Something went wrong in login")
+        alertify.alert("Something went wrong, Please try again!")
       }
     )
   }

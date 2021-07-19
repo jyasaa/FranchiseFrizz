@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../user.service';
+declare let alertify: any;
 
 @Component({
   selector: 'app-product',
@@ -31,7 +32,7 @@ export class ProductComponent {
     newCartObj['quantity']=cartObj.quantity
     //console.log(newCartObj)
     if(newCartObj.quantity===0){
-      alert("Please select atleast one item!")
+      alertify.alert("Please select atleast one item!")
     }
     else{
       this.us.userCart.push(newCartObj)
