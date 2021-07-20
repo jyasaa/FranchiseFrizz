@@ -1,3 +1,7 @@
+section{
+    padding: 10px;
+}
+
 .md-textarea{
     resize: none;
 }

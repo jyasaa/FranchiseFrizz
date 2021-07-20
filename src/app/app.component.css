@@ -30,21 +30,27 @@
       padding: 0px 20px;
   }
 
-  .header .connect a:hover
-  {
-      border-radius: 10px;
-      background-color:#fcde67;
-      color: black;
+  .header .connect .login,
+  .header .connect .signup{
+      margin: 2px 10px;
+      border-radius: 3px;
   }
 
-  .header .connect a
-  {
-      padding: 5px 20px;
+  .header .connect .login a,
+  .header .connect .signup a{
       text-decoration: none;
-      font-size: 17px;
+      list-style: none;
       color: white;
-  }
+    }
 
+    .header .connect .login:hover ,
+    .header .connect .signup:hover {
+        background-color: #fcde67;
+   }
+   .header .connect .login:hover a ,
+   .header .connect .signup:hover a{
+        color: black;
+   }
   .content{
       background-color: black;
       /* height: 100vh; */
