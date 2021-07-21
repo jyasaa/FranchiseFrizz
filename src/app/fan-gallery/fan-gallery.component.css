@@ -11,6 +11,23 @@
     
 }
 
+.label{
+    height: 100px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(204, 30, 88, 0.6),
+      rgba(20, 20, 20, 0.6)
+    ),
+    url("../../assets/HarryPotter/bg2.jpg");
+    border: none;
+    outline: none;
+    color: #fcde67;
+}
 .video{
     display: flex;
     justify-content: center;
@@ -18,8 +35,7 @@
     align-items: center;
     margin: 30px 0px;
 }
-
- .container h1{
+ h1{
     padding: 60px 0;
     color: #fcde67;
     font-size: 30px;
