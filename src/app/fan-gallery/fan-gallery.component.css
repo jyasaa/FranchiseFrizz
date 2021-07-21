@@ -47,6 +47,15 @@
     font-size: 20px;
 }
 
+.back{
+    background-color: black;
+    padding-top: 1%;
+  }
+  .backImg{
+    filter: invert(100%);
+    width: 5%;
+  }
+
 /*
 .row{
     display: flex;
