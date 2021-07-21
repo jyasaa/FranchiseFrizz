@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +32,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { BooksComponent } from './books/books.component';
+import { FanGalleryComponent } from './fan-gallery/fan-gallery.component';
 
 @NgModule({
   declarations: [
@@ -57,14 +60,16 @@ import { BooksComponent } from './books/books.component';
     FooterComponent,
     CartComponent,
     ContactusComponent,
-    BooksComponent
+    BooksComponent,
+    FanGalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

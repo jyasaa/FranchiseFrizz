@@ -24,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { BooksComponent } from './books/books.component';
+import { FanGalleryComponent } from './fan-gallery/fan-gallery.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
@@ -68,7 +69,9 @@ const routes: Routes = [
 
   {path:"contactus",component:ContactusComponent},
 
-  {path:"books",component:BooksComponent}
+  {path:"books",component:BooksComponent},
+
+  {path:"fangallery",component:FanGalleryComponent}
 ];
 
 @NgModule({
