@@ -3,7 +3,7 @@
 
 
 .books{
-  height: 100px;
+  height: 120px;
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -17,8 +17,12 @@
     color: #fcde67;
 }
 
+.row{
+  padding-bottom: 20px !important ;
+}
+
 .card{
-  height: 600px;
+  height: 400px;
 }
 
 .imgBox,
@@ -30,12 +34,15 @@
 
 
 img{
-    width: 300px;
+    width: 180px;
     padding: 10px;
 }
 
-
-
+h1{
+  text-align: center;
+  color: #fcde67;
+  margin-top: 10px;
+}
 
 .back{
   background-color: black;
