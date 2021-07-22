@@ -16,27 +16,31 @@
     </form>
 </div>
 -->
+
 <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 mt-5">
-          <div class="form row mt-3" id="login">
-            <div class="col-sm-12 container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mt-5">
+        <div class="form row mt-3" id="login">
+          <div class="col-sm-12 container">
             <form #ref="ngForm" (ngSubmit)="onLogin(ref.value)">
-               <div class="input mt-4 mb-1">
-              <input class="main-form animated bounceInDown" type="text" name="username" placeholder=" USERNAME" ngModel>
-               </div>
+              <div class="input mt-4 mb-1">
+                <input class="main-form animated bounceInDown" type="text" name="username" placeholder=" USERNAME"
+                  ngModel>
+              </div>
               <div class="input mt-4">
-              <input class="main-form animated bounceInDown" type="password" name="password" placeholder=" PASSWORD" ngModel>
-               </div>
+                <input class="main-form animated bounceInDown" type="password" name="password" placeholder=" PASSWORD"
+                  ngModel>
+              </div>
               <div class="input mt-5">
-              <input class="main-form btn animated bounceInDown" type="submit" value = "LOGIN"/>
-               </div>
+                <input class="main-form btn animated bounceInDown" type="submit" value="LOGIN" />
+              </div>
             </form>
-            </div>
           </div>
-            
         </div>
+
       </div>
     </div>
-  </body>
+  </div>
+</body>
+

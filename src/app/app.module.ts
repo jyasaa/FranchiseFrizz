@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { NgxPayPalModule } from 'ngx-paypal'
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { BooksComponent } from './books/books.component';
 import { FanGalleryComponent } from './fan-gallery/fan-gallery.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { FanGalleryComponent } from './fan-gallery/fan-gallery.component';
     CartComponent,
     ContactusComponent,
     BooksComponent,
-    FanGalleryComponent
+    FanGalleryComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { FanGalleryComponent } from './fan-gallery/fan-gallery.component';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    NgxPayPalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
