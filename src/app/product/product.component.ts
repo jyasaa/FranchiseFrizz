@@ -33,7 +33,7 @@ export class ProductComponent {
     let newCartObj=this.productObj
     newCartObj['quantity']=cartObj.quantity
     //console.log(newCartObj)
-    if(newCartObj.quantity===0){
+    if(cartObj.quantity==0){
       alertify.alert("Please select atleast one item!")
     }
     else{

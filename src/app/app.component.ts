@@ -12,9 +12,11 @@ export class AppComponent {
   ngOnInit(): void {
     this.cartContents=this.us.userCart
   }
-  constructor(public us:UserService){}
+  constructor(public us:UserService,){}
   userLogout(){
     localStorage.clear();
+    this.us.userCart=[];
+    this.cartContents=[];
     this.us.userLoginStatus=false;
   }
 }
