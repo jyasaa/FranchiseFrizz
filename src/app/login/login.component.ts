@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem("token",res.token)
           localStorage.setItem("username",res.username)
           localStorage.setItem("userObj",JSON.stringify(res.userObj))
-
+          console.log(localStorage.getItem('username'))
           //updating user login status
           this.us.userLoginStatus=true;
           //navigate to user profile
