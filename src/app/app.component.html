@@ -10,7 +10,7 @@
   </div>
 
   <div class="connect justify-content-end" *ngIf="us.userLoginStatus">  
-    <div class="login"><a ><i class="fas fa-user"></i> Welcome @{{username}}</a></div>
+    <div class="login"><a ><i class="fas fa-user"></i> Welcome </a></div>
     <div class="login"><a routerLink="/cart" ><i class="fas fa-shopping-cart"></i> Cart ({{cartContents.length}})</a></div>
     <div class="signup"><a routerLink="/login" (click)=userLogout()> <i class="fas fa-sign-out-alt"></i> Logout</a></div>
   </div>
